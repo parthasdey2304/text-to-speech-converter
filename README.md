@@ -1,13 +1,16 @@
-#Text to Speech Converter using Google's Text to Speech API
+# Text to Speech Converter using Google's Text to Speech API
+
 **This is a Python program that takes a text file as input and converts it to speech using the Google Text to Speech API. This program is designed to work only on Linux systems and requires Python version 3.10 or above, as well as the gtts and vlc packages.**
 
-##Prerequisites
+## Prerequisites
+
 To run this program you will need the following : 
 + Python 3.7 or above
 + gTTS python package
 + vlc media player
 
-##Installation
+## Installation
+
 To install the prerequisites, simply run the following commands in your terminal:
 ```
 pip install gtts
