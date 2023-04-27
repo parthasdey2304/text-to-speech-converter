@@ -24,7 +24,7 @@ python speech.py
 
 Please note that this program will automatically install the gtts and vlc packages if they are not already installed.
 
-##Key Notes
+## Key Notes
 + This program is designed to work only on Linux systems.
 + Python version 3.10 or above is required.
 + The program will install gtts and vlc packages if they are not already installed.
