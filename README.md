@@ -30,3 +30,4 @@ Please note that this program will automatically install the gtts and vlc packag
 + The program will install gtts and vlc packages if they are not already installed.
 + The **speech.py** file must be copied to the folder where the text file is kept.
 
+# Screenshots
