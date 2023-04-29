@@ -36,4 +36,5 @@ Please note that this program will automatically install the gtts and vlc packag
 https://user-images.githubusercontent.com/131694386/235288654-33a778e1-f515-4d6b-bf40-eb18f856f815.mov
 
 
+![github](https://user-images.githubusercontent.com/131694386/235288804-3a00b861-48a7-46b6-90ec-3c11c5b82fb4.gif)
 
