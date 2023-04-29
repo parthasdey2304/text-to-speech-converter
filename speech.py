@@ -1,12 +1,8 @@
+#!/bin/python3
+
 # this is a python code that takes a text file as input and converts it to speech
 # using the google text to speech api
 import os
-
-# installing all the prerequisites
-os.system("pip install gtts")
-os.system("sudo apt install vlc -y")
-
-# importing the required packages
 from gtts import gTTS
 
 # read the text file
@@ -23,4 +19,5 @@ tts.save(f"{audio}.mp3")
 file.close()
 
 # this is to play the audio file using cvlc
-os.system("cvlc output.mp3")
+os.system(f"vlc {audio}.mp3")
+           
