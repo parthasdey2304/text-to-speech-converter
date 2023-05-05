@@ -1,23 +1,57 @@
 #!/bin/python3
 
-# this is a python code that takes a text file as input and converts it to speech
-# using the google text to speech api
+# importing all the required packages
 import os
 from gtts import gTTS
+from tkinter import *
+from tkinter import filedialog
+import pygame
 
-# read the text file
-filename = input("Enter the filename with extension(should be inside the same folder) : ")
-file = open(filename, "r")
-text = file.read().replace("\n", " ")
+# creating the root
+root = Tk()
+root.geometry("300x400")
+root.title("Text to speech converter")
+# root.resize(False, False)
+root.config(bg = "grey")
 
-# convert the text to speech
-audio = input("Enter the name with which you want to save the audio file(without extension) : " )
-tts = gTTS(text=text, lang="en")
-tts.save(f"{audio}.mp3")
+filepath = ""
+audio = "temp_audio_generated.mp3"
 
-# closing the file
-file.close()
+# all the methods are here
+def fileOpener():
+	filepath = filedialog.askopenfilename()
+	file = open(filepath, "r")
+	text = file.read().replace("\n", "   ")
+	text_to_speech_converter(text)
 
-# this is to play the audio file using cvlc
-os.system(f"vlc {audio}.mp3")
-           
+def entrysound():
+	text = entry.get()
+	text_to_speech_converter(text)
+
+def text_to_speech_converter(txt):
+	tts = gTTS(text = txt, lang = "en")
+	tts.save(audio)
+	soundplayer()
+
+def soundplayer():
+	pygame.init()
+	pygame.mixer.init()
+	pygame.display.set_mode((1, 1))
+	pygame.mixer.music.load(audio)
+	pygame.mixer.music.play()
+	while pygame.mixer.music.get_busy():
+		root.update()
+	pygame.mixer.quit()
+	os.system(f"rm {audio}")
+
+Label(root, text="Enter the text : ", bg="grey").pack()
+entry = Entry(root, bg="grey")
+entry.pack()
+
+Button(root, text="Submit", bg="grey", pady=5, command=entrysound).pack(pady=10)
+
+Label(root, text="\nOR\n\nText file : ", bg="grey").pack()
+
+Button(root, text="Choose file", command=fileOpener, bg="grey").pack()
+
+root.mainloop()
