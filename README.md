@@ -7,15 +7,28 @@
 To run this program you will need the following : 
 + Python 3.7 or above
 + gTTS python package
-+ vlc media player
++ pygame python package
++ tkinter python package
 
 ## Installation
 
 To install the prerequisites, simply run the following commands in your terminal:
+
+
++ Installing gTTS(Google text to speech library) : 
 ```
 pip install gtts
-sudo apt install vlc -y
 ```
+
++ Installing pygame module:
+ ```
+ pip install pygame
+ ```
+ 
+ + Installing tkinter module:
+ ```
+ sudo apt install python3-tk
+ ```
 
 To use this program, copy the speech.py file to the folder where your text file is kept. Then, open a terminal in that folder and run the following command:
 ```
@@ -31,6 +44,5 @@ Please note that this program will automatically install the gtts and vlc packag
 + The **speech.py** file must be copied to the folder where the text file is kept.
 
 # Screenshots
-
-![github](https://user-images.githubusercontent.com/131694386/235288804-3a00b861-48a7-46b6-90ec-3c11c5b82fb4.gif)
+![Screenshot 2023-05-05 171328](https://user-images.githubusercontent.com/131694386/236449143-d3a43f6a-28d5-42ed-94d8-dbcc7318c478.png)
 
