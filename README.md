@@ -44,5 +44,5 @@ Please note that this program will automatically install the gtts and vlc packag
 + The **speech.py** file must be copied to the folder where the text file is kept.
 
 # Screenshots
-![Screenshot 2023-05-05 171328](https://user-images.githubusercontent.com/131694386/236449143-d3a43f6a-28d5-42ed-94d8-dbcc7318c478.png)
+![Screenshot 2023-05-06 103714](https://user-images.githubusercontent.com/131694386/236601171-efb44522-7d40-41be-800a-830178f10669.png)
 
