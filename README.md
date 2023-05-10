@@ -1,6 +1,12 @@
 # Text to Speech Converter using Google's Text to Speech API
-
 **This is a Python program that takes a text file as input and converts it to speech using the Google Text to Speech API. This program is designed to work only on Linux systems and requires Python version 3.10 or above, as well as the gtts and vlc packages.**
+
+# Upcoming features
+Some of the upcoming features include:
++ Improved UI design
++ Moving to Kivy for better GUI
++ Subtitle Generation
++ Speech quality control
 
 ## Prerequisites
 
@@ -46,3 +52,15 @@ Please note that this program will automatically install the gtts and vlc packag
 # Screenshots
 ![Screenshot 2023-05-06 103714](https://user-images.githubusercontent.com/131694386/236601171-efb44522-7d40-41be-800a-830178f10669.png)
 
+
+# Contributing
+We welcome contributions from the community! We appreciate your contributions to improve the project. If you'd like to contribute to text-to-speech-converter, please read the following guidelines on how to contribute:
++ Fork the repository and create a new branch for your changes.
++ Make your changes to the code.
++ Test your changes thoroughly.
++ Commit your changes with a clear and descriptive message.
++ Push your changes to your fork.
++ Create a pull request and wait for me to verify and then merge it to the main branch.
+
+# THANK YOU COMMUNITY!!!!
+ 
